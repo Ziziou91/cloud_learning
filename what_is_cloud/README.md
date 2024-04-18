@@ -3,7 +3,7 @@ When we talk about the cloud, we are usually looking at it in the context of all
 
 Cloud computing is the delivery of computing services - such as servers, storage, databases, networking, software, and more—over the internet (cloud).
 
-Instead of owning the hardware and infrastructure required for computing applications, companies can rent access from applications to storage from a cloud service provider. 
+Instead of owning the hardware and infrastructure required for computing applications, companies can rent access to applications and storage from a cloud service provider. 
 This is a marked difference to how infrastructure and hardware was historically managed - companies would have to have their own servers and databases on-site.
 
 ## Cloud deployment models
