@@ -63,4 +63,7 @@ Purchasing on-site computing hardware is considered CapEx. Additionally, any cus
 
 Organisations may want to pay upfront for cloud services if they are seeking bespoke solutions or services. They may also seek such arrangement to secure pricing, or provision for the delivery of a client contract.
 
+## The cost of migrating to the cloud
+The financial benefits of cloud services compared to on-site hardware are immediately obivious, but should never be evaluated in a vacuum. Context is vital when comparing the options available, as well as deciding how much emphasis to place on either.
 
+The benefits of a solution where you only pay for what you use is are both clear and powerful. It removes the need for up-front capital expenditure, and greatly re-risks investing in new cloud-based solutions. 
