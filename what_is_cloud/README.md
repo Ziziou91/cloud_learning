@@ -40,4 +40,16 @@ On the other hand, cloud services do come with some disadvantages:
 Azure is a cloud computing platform provided by Microsoft, offering a wide range of services for building, deploying, and managing applications and services through Microsoft's global network of data centers. Azure provides services such as virtual machines, databases, AI, IoT, and developer tools, and it is particularly popular among enterprises due to its seamless integration with Microsoft's other products and services.
 ### Google (GCP)
  GCP provides services such as computing, storage, databases, machine learning, and data analytics, leveraging Google's global network infrastructure and expertise in data management and analysis. GCP is known for its innovative technologies and strong offerings in areas such as AI and machine learning.
+
+## Operating Expenses (OpEx) and Capital Expenses (CapEx) in the cloud
+Operating Expenses (OpEx) and Capital Expenses (CapEx) are ways of quantifying expenditures that a business incurs. They are treated differently for accounting and taxation purposes.
+
+The distinction between OpEx and CapEx becomes particularly relevant in the context of cloud services.
+
+### Operating Expenses (OpEx)
+OpEx is  the day-to-day expenses incurred by business as usual (BaU) operations there to generate revenue. These expenses are deducted from revenue in the same accounting period in which they are incurred.
+
+Examples of OpEx include rent, utilities, salaries and ongoing maitenence costs.
+
+OpEx is particularly relevant to cloud services as these are typically billed on a pay-as-you-go basis. Typically billing for cloud services mean businesses pay only for the resources they use. These subscription fees, as well as associated costs for things like data transer, are considered operating expenses.
  
