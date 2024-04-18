@@ -53,3 +53,14 @@ Examples of OpEx include rent, utilities, salaries and ongoing maitenence costs.
 
 OpEx is particularly relevant to cloud services as these are typically billed on a pay-as-you-go basis. Typically billing for cloud services mean businesses pay only for the resources they use. These subscription fees, as well as associated costs for things like data transer, are considered operating expenses.
  
+### Capital Expenses (CapEx)
+
+CapEx refers to expenses incurred for the purchase or improvement of long-term assets that will be used in the business for more than one accounting period. The cost for these assest can be **amortised** over the time period they are used by the business - expenditure can be realised over many years.
+
+Examples of CapEx include purchasing machinery, equipment, buildings, vehicles, and software licenses.
+
+Purchasing on-site computing hardware is considered CapEx. Additionally, any customization or development costs related to cloud-based software or platforms may also be considered CapEx.
+
+Organisations may want to pay upfront for cloud services if they are seeking bespoke solutions or services. They may also seek such arrangement to secure pricing, or provision for the delivery of a client contract.
+
+
