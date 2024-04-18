@@ -30,3 +30,53 @@ We can configure our EC2 instances with various operating systems, CPU, memory, 
 
 ## Setting up our EC2 instance
 
+**NOTE:** Before spinning up any new EC2 instances, or indeed using any AWS services, it's vital we understand our organisations AWS and cloud policies. For example, there might be a specific region, EC2 instance type, or security policy, we need to implement. **If you have any questions or doubts speak with your DevOps team before following this guide**
+
+All information is correct as of 2024-04-18.
+
+1) **Start by opening your EC2 dashboard**
+
+    This can be found by typing in EC2 in the seach bar at the top of the screen. It should look something like this:
+    ![EC2 Dashboard](images/screenshot_1.png)
+
+2) **Click 'Launch Instances'**
+
+    In this example we're creating an EC2 instance from scratch, so ignore the drop-down
+
+3) **Name your EC2 Instance**
+
+    Good naming convention is vital in allowing us to effectively manage EC2 instances. Organisations will generally specify naming conventions. 
+
+    It's helpful to also specify the purpose or use-case of an EC2 instance in it's name. For example:
+     ![EC2 Name example](images/screenshot_2.png)
+
+4) **Choose an Application and OS Image (Amazon Machine Image)**
+
+    AWS Gives us a wide range or machine images temples to choose from when creating our EC2 instance. Each machine instance comes with it's own Amazon Machine Image ID (AMI ID). 
+
+    For the purpose of this guide choose 'Ubuntu'.
+
+### Machine Images
+A machine image is a snapshot or template of a computing environment. It includes the operating system, software, configurations, and data. It encapsulates everything needed to replicate a specific computing environment, ensuring consistency across different machines or instances. 
+
+5) **Set Instance Type**
+
+    This allows us to specify the hardware provisioned for our EC2 instance. Instances are grouped into families (e.g t2), which vary in vCpus and memory.  
+
+    In general, we want to use the smallest (read cheapest) instance available. 
+
+    Choose t2.micro, or the instance type required by your organisation.
+![EC2 Instance Type t2.micro](images/screenshot_3.png)
+
+6) **Enable Key Pair Login**
+
+
+7) **Specify Network and Security Settings**
+
+    A nice feature of AWS is that is abstracts a lot of the networking away, unlike Azure. 
+
+	1 important part we do need to setup though is the Firewall (Security Group). We 	will set up a new security group, and allow SSH and HTTP traffic. 
+
+	Once again, naming of this Security group is important. We can change this with the edit button.
+
+![EC2 Network Settings](images/screenshot_4.png)
