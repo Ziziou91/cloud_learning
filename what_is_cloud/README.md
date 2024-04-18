@@ -66,4 +66,6 @@ Organisations may want to pay upfront for cloud services if they are seeking bes
 ## The cost of migrating to the cloud
 The financial benefits of cloud services compared to on-site hardware are immediately obivious, but should never be evaluated in a vacuum. Context is vital when comparing the options available, as well as deciding how much emphasis to place on either.
 
-The benefits of a solution where you only pay for what you use is are both clear and powerful. It removes the need for up-front capital expenditure, and greatly re-risks investing in new cloud-based solutions. 
+The benefits of a solution where you only pay for what you use is are both clear and powerful. It removes the need for up-front capital expenditure, and greatly re-risks investing in new cloud-based solutions. This makes cloud-based solutions a popular choice for start-ups and greenfield projects.
+
+Deciding on whether to rely on cloud services becomes far more difficult when evaluating historical expenditure on hardware, machinery and software. It's also important to consider that pricing of cloud solutions are liable to change in the future - some services are offered at a significant discount, or at cost-price to corner a market, and will need to increase in future to realise RoI for the service provider.  
