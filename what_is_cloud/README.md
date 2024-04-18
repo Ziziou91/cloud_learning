@@ -69,3 +69,5 @@ The financial benefits of cloud services compared to on-site hardware are immedi
 The benefits of a solution where you only pay for what you use is are both clear and powerful. It removes the need for up-front capital expenditure, and greatly re-risks investing in new cloud-based solutions. This makes cloud-based solutions a popular choice for start-ups and greenfield projects.
 
 Deciding on whether to rely on cloud services becomes far more difficult when evaluating historical expenditure on hardware, machinery and software. It's also important to consider that pricing of cloud solutions are liable to change in the future - some services are offered at a significant discount, or at cost-price to corner a market, and will need to increase in future to realise RoI for the service provider.  
+
+Another cost to consider is the talent and knowledge required to facitiate a cloud migrations, as well as ongoing maintenence. We may need to bring in new people and pay for training to ensure the skills are there to deliver a cloud solution.
