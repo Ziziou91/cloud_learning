@@ -112,4 +112,16 @@ We can connect to our instance with the following:
 
     We will connecting to our instance using SSH, so choose that.
 ![Connect to instance](images/screenshot_6.png)
-   
+
+2) **Follow the Instructions Provided on the Page**
+    Run the commands provided by AWS in bash to run connect to the EC2 instance with SSH.
+
+    The guide allows us to copy the commands by clicking the commands. The output in bash should look something like this:
+
+
+3)  **Connect to the EC2 instance using SSH**
+
+    If it's the first time you've used this SSH key you'll be asked if you to connect, choose yes.
+    ![SSH key usage in bash](images/screenshot_7.png)
+
+4) **Prepare our EC2 Instance by updating Ubuntu.**
