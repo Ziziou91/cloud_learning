@@ -70,6 +70,8 @@ A machine image is a snapshot or template of a computing environment. It include
 
 6) **Enable Key Pair Login**
 
+    We can specify a SSH key pair to be used to access our EC2 instance, allowing us to keep it secure. As well as uploading our own public key, AWS allows us to generate one, or use a pre-existing one from the drop-down menu, a useful feature for administration. 
+
 
 7) **Specify Network and Security Settings**
 
@@ -80,3 +82,22 @@ A machine image is a snapshot or template of a computing environment. It include
 	Once again, naming of this Security group is important. We can change this with the edit button.
 
 ![EC2 Network Settings](images/screenshot_4.png)
+
+8) **Allocate Storage**
+
+    Before we can launch our machine we need to specify how much storage we need. Exactly as we did when setting the instance type, we want to cut our cloth to measure. Provisioning more storage than our machine needs is a waste of money.
+
+    As the instance we are creating is incredibly lightweight, 8gb of storage should be more than sufficient.
+
+9) **Review and Launch Instance**
+
+    Double-check all of setting are correct before launching the instance.
+
+## Managing EC2 Instances
+
+The EC2 instance we just created is now live. It will likely need a minute or two to finish setting up, but we can already see it, as well as other EC2 instances in organisation, on the main dashboard.
+
+We can interact with our EC2 instance by clicking on it's unique ID.
+
+## Connecting to our EC2 Instance
+
