@@ -101,3 +101,15 @@ We can interact with our EC2 instance by clicking on it's unique ID.
 
 ## Connecting to our EC2 Instance
 
+Clicking the ID takes us to our EC2 instance summary. Here we can see the current state of our instance and IP addresses, as well as further information in the menu below. 
+![EC2 Instance Summary](images/screenshot_5.png)
+
+We can connect to our instance with the following:
+
+1) **Click connect to see options and required steps**
+
+    The different connection options will be represented by tabs at the top of the screen.
+
+    We will connecting to our instance using SSH, so choose that.
+![Connect to instance](images/screenshot_6.png)
+   
