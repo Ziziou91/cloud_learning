@@ -36,12 +36,57 @@ Below is a collection of popular Linux commands, organised by purpose, along wit
 | ----  | ----------------------------------------------------------------- |
 |  --help  | prints instructions of command usage, other flags, description and examples
 | --version  | print script version. Useful way of seeing if script/application exists |
- 
+
 
 ## Processes
 
 ## Permissions
+We can view the current permissions on a file with the command `ll` 
 
+We have 2 ways of referring to permissions:
+- long form 
+- short form
+
+Long form is what we see in the ll list. It's the first column. We can also use short form, which is numbers 
+
+### Long form 
+
+Represents the permissions as 3 sets of 3 letters. These are rwx – Read Write eXecute 
+
+- First set is local, current user 
+- Second set up other
+
+here is an example
+````shell
+-rw-rw-r-- 1 ubuntu ubuntu   149 Apr 19 13:15  provision.sh 
+````
+Notice that there is no x for any user type. This is because currently no user can execute this shell script. 
+
+We can change these permissions with `chmod`: 
+````
+chmod +x provision.sh 
+````
+This will give permissions to all users 
+
+Short hand 
+
+We can express these permission with a series of 3 numbers. For example: 
+
+764		rwxrw-r-- 
+
+Where read (4), write(2), execute(1) total up for each user. Note the product will always be unique to the permission type 
+
+ 
+
+ 
+
+Chmod-calculator.com 
+
+ 
+
+ 
+
+ 
 ## Variables
 
 ## Networking and other 
