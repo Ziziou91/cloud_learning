@@ -42,12 +42,19 @@ Below is a collection of popular Linux commands, organised by purpose, along wit
 
 ## Permissions
 We can view the current permissions on a file with the command `ll` 
+```bash
+-rw-r--r-- 1 joshg 197609   18765 Feb 23 19:38 LICENSE.txt
+```
+
+This describes the permissions for the **Owner**, **User group** and **Public** respectively.  
 
 We have 2 ways of referring to permissions:
 - long form 
 - short form
 
-Long form is what we see in the ll list. It's the first column. We can also use short form, which is numbers 
+Long form is what we see in the ll list. It's the first column. `rw-r--r--`
+
+We can also use short form, which is numbers. The previous would be expressed as `644`
 
 ### Long form 
 
@@ -62,32 +69,30 @@ here is an example
 ````
 Notice that there is no x for any user type. This is because currently no user can execute this shell script. 
 
+### Short form 
+We can express these permission with a series of 3 numbers. For example: 
+
+```
+764		rwxrw-r-- 
+```
+
+Where read (4), write(2), execute(1) total up for each user. Note the product will always be unique to the permission type 
+
+### Amending permissions
+
 We can change these permissions with `chmod`: 
 ````
 chmod +x provision.sh 
 ````
 This will give permissions to all users 
 
-Short hand 
-
-We can express these permission with a series of 3 numbers. For example: 
-
-764		rwxrw-r-- 
-
-Where read (4), write(2), execute(1) total up for each user. Note the product will always be unique to the permission type 
-
- 
-
- 
-
-Chmod-calculator.com 
-
- 
-
- 
+We can use tools like [Chmod Calculator](Chmod-calculator.com) to understand and build the different permission format.s 
 
  
 ## Variables
+Linux environment variables are key-value pairs defining your system’s shell session and program behavior. They let system administrators easily share and distinguish configurations between applications and users.
+
+
 
 ## Networking and other 
 | Command | Description                                                     |
