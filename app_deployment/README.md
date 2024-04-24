@@ -106,9 +106,30 @@ This script does the following:
   10) stops any previously running instances of the app 
   11) runs the app with pm2
 
+### Setting the reverse proxy
+We can amend our nginx config file to get nginx to act as a reverse proxy. 
+
+This allows us can forward all requests on the ip adress to port 3000 - allowing us to direct traffic to our Node.js server without the user having to specify the port it's running on. 
+
+We can manually specify this in the file `/etc/nginx/sites-enabled/default`, by including the following line:
+```shell
+sudo sed -i '51s/.*/\t        proxy_pass http:\/\/localhost:3000;/' /etc/nginx/sites-enabled/default
+```
+
+We can also automate this process by including a `sed` command in our `server_setup.sh` file by using the following:
+```shell
+sudo sed -i '51s/.*/\t        proxy_pass http:\/\/localhost:3000;/' /etc/nginx/sites-enabled/default
+```
+
+
 ## Using the web server
 We can access the web server using `http`. 
+```html
+http://{SERVER IP ADDRESS}
+```
+Type in the ip address in to a browser window to see the provisioning test page.
 
-Type in the ip address and port 3000 into a browser window.
-
-We can 
+Adding `/posts` to our ip address allows us to GET information from the database we seeded during the server setup.
+```html
+http://{SERVER IP ADDRESS}/posts
+```
