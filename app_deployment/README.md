@@ -96,14 +96,15 @@ Run the `server_setup.sh` script:
 This script does the following:
   1) looks for updates, installs where appropiate
   2) Installs nginx
-  3) Enables nginx
-  4) Installs node
-  5) Clones the app code from github
-  6) Changes directory into the app folder
-  7) install dependecies with npm
-  8) install pm2 -> allows us to run the node app in the background.Freeing up the bash window. 
-  9) stops any previously running instances of the app 
-  10) runs the app with pm2
+  3) Set reverse proxy in nginx config
+  4) Enables nginx
+  5) Installs node
+  6) Clones the app code from github
+  7) Changes directory into the app folder
+  8) install dependecies with npm
+  9) install pm2 -> allows us to run the node app in the background.Freeing up the bash window. 
+  10) stops any previously running instances of the app 
+  11) runs the app with pm2
 
 ## Using the web server
 We can access the web server using `http`. 

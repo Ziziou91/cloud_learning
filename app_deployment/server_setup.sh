@@ -6,26 +6,23 @@ sudo apt update -y
 echo done!
  
 # upgrade
-echo upgrade packages...
-# Fix this command! Asks for user inputs
-# "pending kernel upgrade"
-# sudo apt upgrade -y
+echo upgrading packages...
 sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 echo done! 
 
 # install nginx
 echo installing nginx...
-# Fix this command! Asks for user inputs
-# "pending kernel upgrade"
-# sudo apt install nginx -y
 sudo DEBIAN_FRONTEND=noninteractive apt install nginx -y
-echo done!
+echo finished installing nginx!
+
+# Set reverse proxy in nginx config
+sudo sed -i '51s/.*/\t        proxy_pass http:\/\/localhost:3000;/' /etc/nginx/sites-enabled/default
+
 
 # restart nginx
 echo restarting nginx...
 sudo systemctl restart nginx
 echo done!
-
 
 # enable nginx
 echo enabling nginx...
@@ -44,11 +41,11 @@ git clone https://github.com/Ziziou91/sparta-test-app.git
 cd ~/sparta-test-app/app
 
 # npm install
-sudo npm -E install
+sudo -E npm install
 
-sudo npm install -g pm2 
+sudo npm install -g pm2 -y
 
 # stop any previously running versions of the app
-sudo pm2 stop app.js
+pm2 stop app
 # run app
-pm2 start node app.js 
+pm2 start app.js 
