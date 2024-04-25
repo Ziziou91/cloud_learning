@@ -28,3 +28,24 @@ DevOps engineers typically access Microsoft Azure through a combination of tools
 1) Azure Portal: The Azure Portal is a web-based interface provided by Microsoft Azure, offering a graphical user interface (GUI) for managing Azure resources. DevOps engineers can use the portal to provision, configure, monitor, and manage Azure services and resources. It provides a visual representation of the Azure environment and allows users to interact with resources through a point-and-click interface.
 2) Azure CLI (Command-Line Interface): Azure CLI is a cross-platform command-line tool provided by Microsoft for managing Azure resources from the command line. DevOps engineers can use Azure CLI to perform various tasks, such as resource provisioning, configuration, monitoring, and automation. It offers a scripting interface for automating repetitive tasks and integrating Azure management into scripts and workflows.
 3) Third-party tools and integrations. This includes popular DevOps tools such as Jenkink, Terraform, Ansible and Chef. 
+
+## Resource groups
+Azure resource groups have a folder-like structure. This structure allows us to apply scope to each of these levels - access and policies can be applied at each level.
+
+![Azure scope diagram](./images/azure_scope_levels.png)
+
+https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources
+
+### Management groups 
+At the top level we have a management group. This is called entra.
+
+### Subscriptions
+
+All subscriptions across Azure has limits and quotas. For example 50 x VMs of the same size in a single region. Many resources across Azure have such quotas.
+
+These quotas mean it's critical we plan our cloud solutions so they don't affect our business.
+
+
+### Afternoon
+
+We'll be setting up our own networks on Azure

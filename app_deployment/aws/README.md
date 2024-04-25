@@ -1,10 +1,10 @@
-# App Deployment
+# 2 tier app deployment on AWS
 
 This readme describes how to deploy a 2-tier web server and database application on AWS using EC2 instances. 
 
 The EC2 instance hosting the web server uses nginx and Node.js. The EC2 instance hosting the database uses Mongodb.
 
-Much of the instance setup has been automated with bash scripts. Copies of these scripts can be found in this folder.
+Much of the instance setup has been automated with bash scripts. Copies of these scripts can be found in the parent folder.
 
 ## A note on EC2 instance setup
 This README will only specify the settings required when launching both EC2 instances.
