@@ -17,10 +17,11 @@ Azure enables businesses to build, deploy, and manage applications and services 
 
 
 ## Azure regions and aviability zones
-Insert globe image here
+![Azure regions](./images/azure_regions.png)
+
+![Regions legend](./images/azure_legend.png)
 
 ## Connecting to Azure
-
 
 DevOps engineers typically access Microsoft Azure through a combination of tools and interfaces provided by Azure itself, as well as third-party tools and integrations. Here are some common methods DevOps engineers use to access Azure:
 
