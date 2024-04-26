@@ -12,7 +12,7 @@ NOTE: if you don't already have a suitable SSH public key on your virtual networ
 ## Launching a virtual network 
 Azure gives us the option of creating a virtual network to let our virtual machines securely communicate with each other. We're going to start by creating a virtual network.
 
-1) Open the resource group the SSH key and virtual network are stored and create a new virtual machine.
+1) Open the resource group the SSH key is stored in to create a new virtual network.
 2) Choose an appropiate name for the virtual network and make sure it's being deployed in the same region we're going to deploy our virtual machines in.
 3) Address space: if it isn't already populated the fields with it then add 10.0.0.0/16
 4) Just below this create our two subnets:
@@ -165,3 +165,11 @@ Adding `/posts` to our ip address allows us to GET information from the database
 ```html
 http://{SERVER IP ADDRESS}/posts
 ```
+
+## Virtual Machine Images
+We can create our own virtual machine images.
+
+Talk about benefits, and then instructions
+
+include new script.
+

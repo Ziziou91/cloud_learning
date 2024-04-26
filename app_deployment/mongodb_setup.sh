@@ -13,13 +13,13 @@ echo DONE upgrade
 # Install mongodb 7.0.6
 sudo apt-get install gnupg curl -y
 echo installing mongodb
-curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
+sudo curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
 sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
    --dearmor --yes
 
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 
-sudo apt-get update
+sudo apt update -y
 
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mongodb-org=7.0.6 mongodb-org-database=7.0.6 mongodb-org-server=7.0.6 mongodb-mongosh=2.2.4 mongodb-org-mongos=7.0.6 mongodb-org-tools=7.0.6
 echo DONE installing mongodb 7.0.6

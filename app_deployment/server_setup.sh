@@ -3,6 +3,9 @@
 # NOTE set DB_HOST environment variable for database BEFORE running this script
 # export DB_HOST=.....
 
+# ensure in root directory
+sudo cd /
+
 # update 
 echo updating...
 sudo apt update -y
@@ -47,7 +50,7 @@ echo DONE app cloned from github
 
 # cd app folder
 # cd ~/repo/app
-cd ~/sparta-test-app/app
+cd /sparta-test-app/app
 
 # npm install
 sudo -E npm install
