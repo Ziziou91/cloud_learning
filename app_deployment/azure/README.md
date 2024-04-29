@@ -1,4 +1,22 @@
 # 2 tier app deployment on Azure
+- [2 tier app deployment on Azure](#2-tier-app-deployment-on-azure)
+  - [Instructions](#instructions)
+  - [Launching a virtual network](#launching-a-virtual-network)
+  - [A note on the virtual machine instance setup](#a-note-on-the-virtual-machine-instance-setup)
+  - [Setting up the database](#setting-up-the-database)
+    - [Launching the virtual machine](#launching-the-virtual-machine)
+  - [Setting up the web server](#setting-up-the-web-server)
+    - [Launching the virtual machine](#launching-the-virtual-machine-1)
+    - [Configuring and starting the Mongodb database](#configuring-and-starting-the-mongodb-database)
+  - [Starting the web server](#starting-the-web-server)
+    - [Configuration](#configuration)
+  - [Starting the server](#starting-the-server)
+    - [Setting the reverse proxy](#setting-the-reverse-proxy)
+  - [Using the web server](#using-the-web-server)
+  - [Virtual Machine Images](#virtual-machine-images)
+    - [A quicker way of launch VMs](#a-quicker-way-of-launch-vms)
+    - [Creating virtual machine images on Azure](#creating-virtual-machine-images-on-azure)
+    - [Launching a virtual machine image](#launching-a-virtual-machine-image)
 
 This readme describes how to deploy a 2-tier web server and database application on Azure using virtual machine instances and a virtual network. 
 
@@ -167,9 +185,17 @@ http://{SERVER IP ADDRESS}/posts
 ```
 
 ## Virtual Machine Images
-We can create our own virtual machine images.
+As well as utilising premade virtual machine images, we can create our own images from our instances.
 
-Talk about benefits, and then instructions
+This approach allows us to expedite the setup of applications and services required by our instance. Services such as Node.js and mongodb will be available as soon as our virtual machines is ready.
+
+### A quicker way of launch VMs
+![Speed to deploy comparison](./images/speed_to_deploy.png)
+
+### Creating virtual machine images on Azure
+
+### Launching a virtual machine image
+Talk about user data script
 
 include new script.
 
