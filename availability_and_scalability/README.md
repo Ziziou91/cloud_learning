@@ -16,10 +16,12 @@ In order to orchestrate traffic to different virtual machines we'll require a **
 In Azure we achieve this with a scale set
 
 ## What we need working before we can create our scale set
-Before we cam create our scale set, we 
+Before we can create our scale set, we need to have a thoroughly tested virtual machine image, and accompanying user data script.
 
+We also need to know what parameters our virtual machines typically operates within, as well as when we may need to scale. This README on monitoring and alerts describes hows we can get data on CPU, network and storage usage from our virtual machine.
 
 ## Creating our virtual machine scale set
+
 
 choose the resource group
 
