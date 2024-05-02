@@ -21,15 +21,60 @@ Before we can create our scale set, we need to have a thoroughly tested virtual 
 We also need to know what parameters our virtual machines typically operates within, as well as when we may need to scale. This README on monitoring and alerts describes hows we can get data on CPU, network and storage usage from our virtual machine.
 
 ## Creating our virtual machine scale set
+### Basics
+1) Select the resouce group and choose a suitable name for the scale set. For example:
+```
+tech258-joshg-app-scale-set
+```
+2) Availability zones - Select all of 1, 2 and 3 from the menu
+
+![Scale set basics menu](./images/scale_set_basics.png)
+
+3) Orchestration mode - choose uniform
+
+4) Scaling mode - select autoscaling. A option to configure this will then appear. click the link
+
+![Scale set basics menu 2](./images/scale_set_basics_2.png)
+
+5) We're then taken to a **Scaling Configuration** menu. This is where we set scaling conditions such as min and max number of instances. **Click the pencil right to Default Condition** to edit.
+
+6) Change the conditions to our desired parameters. For the example app I used:
+   1) Minimum - 2
+   2) Maximum - 3
+   3) Scale out CPU threshold 75%
+   4) Scale in CPU threshold 20% 
+
+Once these are set click save and return to the **basics** menu.
+
+7) Choose the image we tested previously for the scale set to use
+
+8) Set size to Standard_B1s
+
+9) Set authentication type to SSH public use. Change username and SSH public key source
+
+10) Update license type to *Other*
+
+![Scale set basics menu 3](./images/scale_set_basics_3.png)  
+
+### Disks
 
 
-choose the resource group
+### Networking
+
+
+### Health
+
+### Advanced
+
+
+
+
 
 Name: tech258-joshg-app-scale-set
 
 Availability zone: choose all of 1, 2 and 3
 
-orchestration mode: Uniform
+
 
 Scaling mode: Autoscaling, then click the configure that appears
     change the default condition by clicking the pencil.
