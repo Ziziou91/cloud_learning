@@ -32,26 +32,57 @@ The NVA and DMZ doesn't protect us from data injection or XSS - this needs to be
    tech258-joshg-3-subnet-vnet
 ```
 3) Specify the subnets. We'll need the following:
-   1) public
-   2) dmz
-   3) priviate (when setting up the private subnet select the private subnet - no outbound means we need to use our image with mongo preinstalled).
+   1) public subnet - this will be the subnet our web server VM is in. We'll give this the ip address range `10.0.2.0/24`
+   2) dmz subnet - this is the subnet our Network Virtual Applicance will sit in. It has the ip address range `10.0.3.0/24` 
+   3) priviate subnet - this is the subnet for our database VM. It has the ip address range `10.0.4.0/24`
+      1) IMPORTANT: when setting up the private subnet select the 'private subnet' check box - no outbound means we need to use our image already with mongodb pre-installed and updated.
 
+![Setting up our virtual networks subnets](./images/virtual_network/virtual_network_1.png)
    
-4) This is so we have the address space for the DMZ
+4) Set the owner tag, review and create
    
 ### Creating our virtual machines
-![Virtual network setup basics](./images/virtual_machines/virtual_network_1.png)
+We'll start with creating the database virtual machine. As with the 2-tier deployment, we need the database live first so its ready for the script on our web server (npm start -> seed.js) to seed the database.  
 
+**Creating the database virtual machine**
 
+1) Give the vm a name that reflect it's part of *3 subnet vnet architecture*. Something like:
+   ```
+   tech258-joshg-in-3-subnet-vnet-sparta-app-db
+   ```
+2) Selected **Zone 3** as our availability zone - the important thing is that the machines are all in different zones to ease recovery should a zone become unavaiable. 
+3) Select the db image we previously created.
 
-Set up DB VM
-    Note that we don't need a public IP address
+![Virtual machine db setup](./images/virtual_machines/virtual_network_1.png)
 
+4) Change username, set SSH key and choose *other* for license type
+5) Storage. Set this to standard SSD
+6) Networking:
+   1) Choose the virtual network we just set up
+   2) Subnet - choose the private subnet (10.0.4.0/24)
+   3) Public ip - we **do not** need a public address for this VM.
+   4) Select inbound ports - select SSH (22)
+   
+![Virtual machine db networking setup](./images/virtual_machines/virtual_machines_2.png)
 
-Set up App VM
+6) Set owner tag, review and create.
+
+**Creating the web server virtual machine**
+It makes sense the set up the web server VM next. we can ensure everything is working correctly before implementing the NVA.
+
+1) Give the vm a name that reflect it's part of *3 subnet vnet architecture*. Something like:
+   ```
+   tech258-joshg-in-3-subnet-vnet-sparta-app-vm
+   ```
+2) Selected **Zone 1** as our availability zone - the important thing is that the machines are all in different zones to ease recovery should a zone become unavaiable. 
+
+3) Select the app image we previously created.
+4) Change username, set SSH key and choose *other* for license type
+5) Storage. Set this to standard SSD
 
 Check it's all working before creating the NVA VM
 
+**Creating the NVA virtual machine**
 
 
 
